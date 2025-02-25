@@ -1,0 +1,67 @@
+<div class="embed-container" id="mapContainer">
+  <div class="form-container">
+    <select id="stateSelect">
+      <option value="" selected>Select State</option>
+    </select>
+    <select id="countySelect" disabled>
+      <option value="">Select County</option>
+    </select>
+    <select id="citySelect" disabled>
+      <option value="">Select City (Optional)</option>
+    </select>
+    <input type="text" id="start_dateSelect" placeholder="Select Start Date" />
+    <input type="text" id="end_dateSelect" placeholder="Select End Date" />
+    <select id="roadNameSelect" disabled>
+      <option value="">Select Road Name</option>
+    </select>
+    <select id="relatedRoadNameSelect" disabled>
+      <option value="">Select Related Road Name</option>
+    </select>
+    <select id="intersectionSelect" disabled>
+      <option value="">Select Intersection</option>
+    </select>
+    <button id="searchBtn" disabled>Select Data</button>
+  </div>
+  <div
+    class="form-container"
+    id="secondaryFilterContainer"
+    style="display: none"
+  >
+    <select id="vehicleTypeFilter">
+      <option value="">Select Vehicle Type(Optional)</option>
+      <option value="Pedestrians">Pedestrians</option>
+      <option value="Groups Printed- Cars">Groups Printed- Cars</option>
+      <option value="Groups Printed- Combined">Groups Printed- Combined</option>
+      <option value="Groups Printed- Trucks">Groups Printed- Trucks</option>
+      <option value="Motorized Vehicles">Motorized Vehicles</option>
+    </select>
+    <select id="dayOfWeekFilter" disabled>
+      <option value="">Select Day of Week (Optional)</option>
+    </select>
+    <button id="obtainDataBtn">Obtain Data</button>
+  </div>
+  <div id="map"></div>
+  <div id="data-output">
+    <div id="data-header">
+      <span id="data-header-title"
+        >Turning Movement Data for RIVER FALLS DRIVE & DUNN AVENUE</span
+      >
+      <i
+        class="fas fa-download"
+        style="cursor: pointer; margin-right: 10px"
+        title="Download CSV"
+        onclick="downloadTableAsCSV()"
+      ></i>
+      <button id="closeTableBtn" onclick="closeTable()">X</button>
+    </div>
+    <div id="data-table"></div>
+  </div>
+
+  <div class="action-buttons">
+    <button id="mapToggleBtn" class="traffic-button">Satellite</button>
+    <button id="trafficToggleBtn" class="traffic-button">Toggle Traffic</button>
+    <button id="customFullscreenBtn" class="fullscreen-button">
+      View Fullscreen
+    </button>
+  </div>
+</div>
