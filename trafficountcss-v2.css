@@ -21,11 +21,16 @@ body {
 }
 .form-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 8px;
+  max-width: 90%;
+  margin: 0 auto; /* Centers the search box */
+  background: white;
   padding: 10px;
-  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .filter-group {
@@ -37,13 +42,13 @@ body {
 }
 
 select, input {
-  padding: 8px;
-  font-size: 14px;
-  min-width: 220px; /* Ensure all fields have the same width */
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  min-width: 160px; /* Reduce from 220px */
+  max-width: 220px;
   text-align: center;
+  padding: 6px;
+  font-size: 14px;
 }
+
 
 button {
   padding: 8px 15px;
