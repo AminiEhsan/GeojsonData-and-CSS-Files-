@@ -110,17 +110,21 @@ body {
 
 /* Data Output Section */
 #data-output {
-  position: relative;
+  position: absolute; /* Keep it floating and draggable */
+  bottom: 5%;
+  left: 2%;
   background-color: rgba(255, 255, 255, 0.95);
-  width: 100%;
-  max-height: 40vh;
-  display: none;
-  z-index: 100;
+  width: 60vw;
+  height: 40vh;
+  max-height: 80%;
+  max-width: 60vw;
+  display: none; /* Hide initially but keep it in the DOM */
+  z-index: 1000; /* Ensure it's always above other elements */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 1px solid #a6a6a6;
   resize: both;
   overflow: auto;
-  padding-bottom: 10px;
+  transition: opacity 0.3s ease-in-out; /* Only fade, don't affect layout */
 }
 
 /* Data Table Header */
