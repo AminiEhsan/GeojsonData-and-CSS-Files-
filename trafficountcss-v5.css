@@ -13,9 +13,9 @@ body {
 .embed-container {
   display: flex;
   flex-direction: column;
-  width: 95vw;
+  width: 90vw;
   max-width: 2000px;
-  height: 95vh; /* Dynamic height */
+  height: 90vh; /* Dynamic height */
   margin: 1% auto;
   border: 2px solid #ccc;
   border-radius: 20px;
