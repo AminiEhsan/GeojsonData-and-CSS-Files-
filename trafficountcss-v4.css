@@ -13,10 +13,10 @@ body {
 .embed-container {
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 100vw;
   max-width: 2000px;
-  height: 85vh; /* Dynamic height */
-  margin: 20px auto;
+  height: 100vh; /* Dynamic height */
+  margin: 1% auto;
   border: 2px solid #ccc;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
