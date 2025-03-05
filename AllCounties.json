@@ -1,17 +1,10 @@
 {
-  "type": "Feature",
-  "properties": {
-    "STATEFP": "12",
-    "COUNTYFP": "089",
-    "COUNTYNS": "00295730",
-    "AFFGEOID": "0500000US12089",
-    "GEOID": "12089",
-    "NAME": "Nassau",
-    "LSAD": "06",
-    "ALAND": 1679966574,
-    "AWATER": 200159166
-  },
-  "geometry": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "NAME": "Nassau" },
+      "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
@@ -45,15 +38,11 @@
       ]
     ]
   }
-}
-
-
-{
-  "type": "Feature",
-  "properties": {
-    "NAME": "St. Johns"
-  },
-  "geometry": {
+    },
+    {
+      "type": "Feature",
+      "properties": { "NAME": "Duval" },
+      "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
@@ -74,23 +63,11 @@
       ]
     ]
   }
-}
-
-
-{
-  "type": "Feature",
-  "properties": {
-    "STATEFP": "12",
-    "COUNTYFP": "031",
-    "COUNTYNS": "00293656",
-    "AFFGEOID": "0500000US12031",
-    "GEOID": "12031",
-    "NAME": "Duval",
-    "LSAD": "06",
-    "ALAND": 1975764931,
-    "AWATER": 403035529
-  },
-  "geometry": {
+    },
+    {
+      "type": "Feature",
+      "properties": { "NAME": "St. Johns" },
+      "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
@@ -119,4 +96,6 @@
       ]
     ]
   }
+    }
+  ]
 }
