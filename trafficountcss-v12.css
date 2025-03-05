@@ -199,8 +199,6 @@ body {
 /* Data Table */
 #data-table {
   max-height: calc(100% - 80px);
-  max-width: 100%;
-  width: auto;
   overflow-y: auto;
   overflow-x: auto;
   padding: 10px;
